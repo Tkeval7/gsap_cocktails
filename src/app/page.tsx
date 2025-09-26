@@ -7,6 +7,7 @@ import Lenis from "lenis";
 import Cocktails from "@/components/Cocktails";
 import About from "@/components/About";
 import { useEffect } from "react";
+import Art from "@/components/Art";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero />
       <Cocktails />
       <About />
+      <Art />
     </main>
   );
 }
