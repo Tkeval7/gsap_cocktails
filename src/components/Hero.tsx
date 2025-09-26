@@ -26,6 +26,22 @@ const Hero = () => {
       stagger: 0.06,
     });
 
+    gsap.from(".right-leaf", {
+      opacity: 0,
+      x: 200,
+      ease: "expo.out",
+      duration: 1.8,
+      delay: 1,
+    });
+
+    gsap.from(".left-leaf", {
+      opacity: 0,
+      x: -200,
+      ease: "expo.out",
+      duration: 1.8,
+      delay: 1,
+    });
+
     gsap.from(paragraphSplit.lines, {
       opacity: 0,
       yPercent: 100,
@@ -89,15 +105,15 @@ const Hero = () => {
 
         <Image
           src="/images/hero-left-leaf.png"
-          width={100}
-          height={100}
+          width={326}
+          height={326}
           alt="left-leaf"
           className="left-leaf absolute"
         />
         <Image
           src="/images/hero-right-leaf.png"
-          width={100}
-          height={100}
+          width={326}
+          height={326}
           alt="right-leaf"
           className="right-leaf absolute"
         />
